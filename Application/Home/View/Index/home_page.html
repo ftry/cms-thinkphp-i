@@ -1,0 +1,54 @@
+﻿<!-- 主页-->
+<html>
+<head>
+    <meta charset="utf-8">
+    <tittle></tittle>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link  href="__PUBLIC__/css/home_page.css" rel="stylesheet" type="text/css" />
+    <link  href="__PUBLIC__/css/mui.min.css" rel="stylesheet" type="text/css" />   
+
+</head>
+
+<body background="__PUBLIC__/img/10.jpg">
+    <div style="position: fixed;top: 0;left: 0;bottom: 0;right: 0;z-index: -1;height: 100%;width: 100%;border: 0;background-repeat:no-repeat;">
+        <img src="__PUBLIC__/img/10.jpg"/>
+    </div>
+    <div style="margin-left:100px">
+
+        <a href="register_boy.html"> <button type="button"><font color="#4697E9">注册</font></button></a><br /><br />
+
+        <a href="login.html"> <button type="button"><font color="#4697E9">登录</font></button></a>
+    </div>
+
+    <div class="user">
+        <!--a链接用来连接到用户界面-->
+        <!--{$_SESSION['name']}-->
+        <a href="user_centre.html"> <button type="button" class="shit"><font color="#ffffff">{$_SESSION['name']}</font></button></a>
+    </div>
+   
+    <form action="http://www.baidu.com/baidu">
+        <input type="text" name="word" style="width:20%;height:6%;margin-left:500px" />
+        <input type="submit"style="height:6%" value="搜一下" />
+    </form>
+
+    <div class="campus">
+        <div class="mui-card">
+            <div class="mui-card-header">学习动态</div>
+            <h1>学习动态</h1>
+            <div class="mui-card-content"><a href="read.html"><img src="__PUBLIC__/img/1.jpg"></a></div>
+            <div class="mui-card-footer">学习动态</div>
+        </div>
+    </div>
+    <div class="campus">
+        <div class="mui-card">
+            <div class="mui-card-header">论坛</div>
+            <h1>论坛</h1>
+            <div class="mui-card-content"><a href="video.html"><img src="__PUBLIC__/img/2.jpg"></a></div>
+            <div class="mui-card-content"><a href="work.html"><img src="__PUBLIC__/img/2.jpg"></a></div>
+            <div class="mui-card-footer">论坛</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

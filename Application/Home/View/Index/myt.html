@@ -1,0 +1,20 @@
+<!-- 我接受任务的页面-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="__URL__/finish" method="post">
+        <li>我的任务列表</li><br/>
+        <volist name="list" id="vo">
+            <a href="__CONTROLLER__/finish?id={$vo.id}"> {$vo.time}--{$vo.class}--{$vo.room}--{$vo.demand} 已完成</a></br>
+        </volist>
+    </form>
+
+    
+</body>
+</html>

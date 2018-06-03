@@ -1,0 +1,32 @@
+.info .total {
+    margin: 20px;
+    border: #000 solid 2px;
+    width: 300px;
+    height: 200px;
+}
+.info .total .time{
+    margin: 5px;
+    border: #000 solid 2px;
+    width: 100px;
+    height: 40px;
+}
+
+.info .total .place {
+    margin: 5px;
+    border: #000 solid 2px;
+    width: 100px;
+    height: 40px;
+}
+
+.info .total .paper {
+    margin: 5px;
+    border: #000 solid 2px;
+    width: 150px;
+    height: 70px;
+}
+
+.info .total .get {
+    float: right;
+    margin-top: -15px;
+    margin-right: 15px;  
+}

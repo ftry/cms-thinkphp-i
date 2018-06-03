@@ -1,0 +1,24 @@
+﻿<!--视频播放的页面-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>学习视频</title>
+</head>
+<body background="__PUBLIC__/img/11.jpg">
+ <form action="__URL__/video" method="post">
+    <volist name="list" id="vo">
+
+        <li>{$vo.name}</li><br>
+     < width="320" height="240" controls="controls">
+
+         <source src="__PUBLIC__/video/v/{$vo.path}.mp4" type="video/mp4"/>
+
+     </video><br/>
+    </volist>
+ </form>
+    
+</body>
+</html>

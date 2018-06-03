@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>上传头像</title>
+</head>
+<body>
+    <form action="__URL__/upimg" enctype="multipart/form-data" method="post" >
+        <!--<input type="text" name="name" />-->
+        <input type="file" name="img" />
+        <input type="submit" value="提交" />
+        <volist name="list" id="vo">
+            <img src="Uploads/{$vo.img}"></br>
+        </volist>
+    </form>
+
+    <img src="Uploads/20171215/672670_48b47bcd68e5f6eb7c4ab3140d97bd845a336497b852e.png">
+    
+
+
+    
+
+</body>
+</html>

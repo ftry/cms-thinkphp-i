@@ -1,0 +1,64 @@
+﻿<!--用户个人中心的页面-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <tittle></tittle>
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+        <link  href="__PUBLIC__/css/user_centre.css" rel="stylesheet" type="text/css" />
+        <link  href="__PUBLIC__/css/mui.min.css" rel="stylesheet" type="text/css" />
+        
+    </head>
+    <!--这里修改背景图片-->
+    <body background="__PUBLIC__/img/11.jpg">
+        <div style="margin:0 auto;text-align:center">
+            <div class="headshot">
+                <!--用户头像，需要在数据库中调用-->
+                <img src="__PUBLIC__/img/headshot.png" style="margin-left:-100px" />
+            </div>
+
+            <!--用户个人信息模块，后台用append方法插入个人信息-->
+            <!-- <form action="__URL__/show" method="post">-->
+            <div class="content">
+            <!--<div>-->
+            昵称：{$_SESSION['name']}
+            电话：{$_SESSION['tel']}
+        </div>
+
+            <!--</form>-->
+
+            <form action="http://www.baidu.com/baidu">
+                <input type="text" name="word" style="width:20%"/>
+                <input type="submit" value="搜一下" />
+            </form>
+
+            <div class="record">
+                <a href=""><img src="__PUBLIC__/img/record.png"></a>
+            </div>
+
+            <!--积分板块-->
+            <div class="score">
+                <!--<div>-->
+                <!--<button type="button" class="mui-btn mui-btn-danger">积分</button><br />-->
+                <div class="btn2"><button type="button" class="mui-btn mui-btn-success"><a href=""><div class="scoreHis">记录积分</div></a></button></div>
+                <br />
+                <div class="btn2"><button type="button" class="mui-btn mui-btn-success"><a href=""><div class="scoreHis">积分获取方式</div></a></button></div>
+            </div>
+
+            <!--底部，我的发布-->
+            <div class="bottom">
+                <div class="publish">
+                    <a href="deal.html"><button type="button" class="mui-btn mui-btn-royal">我要发布</button></a>
+                </div>
+                <div class="get">
+                    <a href="work.html"><button type="button" class="mui-btn mui-btn-danger">论坛</button></a>
+                </div>
+                <div class="get">
+                    <a href="http://www.baidu.com"><button type="button" class="mui-btn mui-btn-danger">搜索</button></a>
+                </div>
+                <div class="get">
+                    <a href="http://127.0.0.1/aixunxi/download"><button type="button" class="mui-btn mui-btn-danger">资料下载</button></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

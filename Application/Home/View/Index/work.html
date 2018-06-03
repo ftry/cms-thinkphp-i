@@ -1,0 +1,19 @@
+﻿<!-- 去接受任务的页面-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>论坛</title>
+</head>
+<body background="__PUBLIC__/img/11.jpg">
+        <form action="__URL__/take" method="post">
+            <li>爱学习</li><br/>
+            <volist name="list" id="vo">
+              
+                <a href="__CONTROLLER__/take?id={$vo.uid}&id2={$vo.id}&t={$vo.time}&c={$vo.class}&r={$vo.room}&d={$vo.demand}">{$vo.time}-{$vo.class}-{$vo.room}-{$vo.demand}</a><br/>
+            </volist>
+        </form>
+</body>
+</html>

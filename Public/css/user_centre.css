@@ -1,0 +1,65 @@
+.content {
+    #margin-top: 20px;
+    #margin-left: 40px;
+    margin: 0 auto;
+    text-align: center;
+    width: 110px;
+    height: 50px;
+    color: #00A2D4;
+    #padding: 4px 6px;
+    #border: 1px dashed #00A2D4;
+    border-radius: 2px;
+}
+.content p {
+    text-indent:2em;
+}
+
+.record {
+    margin-top: 20px;
+    margin-left: 40px;  
+}
+
+.score {
+    margin-top: 20px;
+    margin-left: 550px;  
+    width: 290px;
+    height: 140px;
+    color:#00A2D4;#padding:4px 6px;#border:1px dashed #00A2D4;border-radius:2px;
+    }
+
+.scoreHis {
+    width:150px;
+    color: #fff;
+}
+
+.btn2 {
+        margin-left: 65px;  
+}
+
+body .headshot {
+
+    margin-top:20px;
+    margin-left:123px;
+}
+
+.headshot img{
+
+     width:120px;
+     border-radius:150px;
+}
+
+.bottom {
+    margin-top:10px; 
+}
+
+.bottom .publish {
+    margin-left:25px; 
+    float: left;
+    display:inline;
+}
+
+.bottom .get {
+    margin-right:25px; 
+    float: right;
+    display:inline;
+}
